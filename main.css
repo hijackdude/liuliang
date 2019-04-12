@@ -1,0 +1,171 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;}
+    div {
+        display: block;}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    }
+
+.intro {
+    margin: 0 auto;
+    overflow: hidden;}
+
+.intro .intro-header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;}
+ .header-image-wrapper {
+     max-width: 700px;
+     margin: 0 auto;
+     z-index: 0;
+     margin-bottom: 2rem;
+     position: relative;
+    }
+    .intro__hed {
+        max-width: 60rem;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Atlas Grotesk Web';
+        font-weight: 300;
+        line-height: 1.2;
+        font-size: 64px;
+    }
+    .logo-wrapper {
+        position: relative;
+        margin-top: -100px;
+    }
+    body {
+        background: #f9f9f9;
+        background: #fbd3d1;
+        font-size: 17px;
+    }
+    
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .section1, .section3 {
+        max-width: 40rem;
+        margin: 0 auto 3rem auto;
+        padding-top: 1rem;
+    }
+ .section__defined, .section__hed {
+    font-size: 32px;
+    color: #4a4e80;
+    font-family: 'Atlas Grotesk Web';
+    font-weight: 500;
+}
+    .section2 {
+        margin-top: 100px;
+    }
+    .section4 {
+        max-width: 40rem;
+        margin: 0 auto 3rem auto;
+        padding-top: 1rem;
+    }
+    .definition-wrapper {
+        padding: 0 1rem;
+        max-width: 40rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .summary {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    .summary.calculation__title,
+    .summary.must__title {
+        font-family: Atlas Grotesk Web;
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: .5rem;
+        color: #111;
+    }
+    .summary-section1 .must__req {
+        list-style-type: disc;
+    }
+     .summary.calculation__steps,
+    .summary.must__req {
+        margin-left: 1rem;
+    }
+    .summary-section1 .calculation__steps {
+        list-style-type: disc;
+    }
+    .chart-title {
+        font-size: 16px;
+        font-family: 'Atlas Grotesk Web';
+        margin-bottom: 0;
+        margin-top: 2rem;
+        padding-bottom: 11px;
+        border-bottom: 3px solid #000;
+        font-weight: 600;
+        color: #111;
+    }
+    .prose {
+        max-width: 40rem;
+        margin: 1rem auto;
+        padding: 0 1rem;
+        line-height: 1.8;
+        color: #222;
+        -webkit-font-smoothing: auto;
+    }
+    .notes {
+        font-family: 'Atlas Grotesk Web';
+        color: rgba(0,0,0,.67);
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+
+
+
+
+    
+
