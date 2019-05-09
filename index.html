@@ -4,6 +4,19 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="source.css" type="text/css" />
+<link rel="stylesheet" href="calculate.css" type="text/css" />
+<style type="text/css">
+.headpic {
+        margin-bottom: 10px;
+        }
+         .manhua {
+       margin-top: 10px;
+        }
+
+
+</style>
+
+
 </head>
 <body>
 <!-- 
@@ -11,31 +24,27 @@
 <a></a>
 hyperlinked needed
 -->
-
 <div class="intro">
-<div class="intro-header-wrapper">
-<div class="header-image-wrapper">
 
+
+<div class="headpic">
+    <img src="headpic.png" width="100%" height="100%">
 </div>
 
+<div class="manhua">
+<img src="manhua2.png" width="100%" height="100%"> 
 </div>
 
-<h1 class="intro_hed" style="margin:0 auto"><center>虚假流量现形记，1亿人谁转发了他的微博</center></h1>
-<div class="intro_time">
-	<time >May 8</time>
-</div>
 
-<p class="prose" style="color:blue">漫画</p>
-<p class="prose" >那么，转发他微博的人都是谁呢？</p>
-</div>
-<div class="chart" style="width:1000px"></div>
+<p class="prose" >那么，转发他微博的人都是谁呢？</p></div>
+<div class="chart" style="width:1000px" style="margin:0 auto"></div>
 </div>
 <section class="section1">
 <div class="definition-wrapper">
         <p class="chart-title">爱他，就为他买数据？</p>
         <p class="prose">流量不会凭空而生，每一个小号、每一次转发背后，都隐藏着“造假产业链”中的某一位操纵者。各个节点相互串联，一张流量经济的复杂网络便形成了。</p>
 </div>
-<p class="prose" style="color:blue">流量造假利益图</p>
+
 </section>
 
 
@@ -68,7 +77,29 @@ hyperlinked needed
         
         </p>
         <div class="calculator" style="color:coral">
-            <!-- domain zai zheli -->水军计算器在这里
+            <div class="wrapper">
+                    <h1 class="wrapper__title">水军计算器：为你的idodl买水军花多少钱？</h1>
+                    <form class="calculator">
+                            <div class="calculator__row">
+                                    <label for="bill">转发数: <span class="bill-amount"></span></label>
+                                    <input type="range" min="0" max="100000" value="0" step="1" class="calculator__bill" id="bill" required>
+                            </div>
+
+                            <div class="calculator__row">
+                                    <label for="tip">评论数: <span class="tip-amount"></span></label>
+                                    <input type="range" min="0" max="100000" value="0" step="1" class="calculator__tip" id="tip" required/>
+                            </div>
+
+                            <div class="calculator__row">
+                                    <label for="tip2">点赞数: <span class="tip2-amount"></span></label>
+                                    <input type="range" min="0" max="100000" value="0" step="1" class="calculator__tip2" id="tip" required>
+                            </div>
+
+                            <div class="calculator__row">
+                                    <h2 class="calculator__info">花费金额: <span class="calculator__result"></span></h2>
+                            </div>
+                    </form>
+            </div>
         </div>
         <!-- <p class="notes"></p> -->
         <!-- if notes necessary -->
@@ -84,7 +115,7 @@ hyperlinked needed
             </p>
         </section>
 
-        <div id="container" style="height: 100%"></div>
+ 
 
 
 
@@ -149,17 +180,12 @@ hyperlinked needed
 </section>
 <!-- <section class="section4"></section> -->
 <!-- if necessary -->
-
+<p class="prose" style="color:blue">流量造假利益图</p>
 
 </body>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.0.0/d3.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
 <script src="source.js"></script>
-
-      <script type="text/javascript" src="echarts.min.js"></script>
-
-       <script type="text/javascript" src="ecStat.min.js"></script>
-   
-
-
-<script src="table.js"></script>
+<script src="calculate.js"></script>
