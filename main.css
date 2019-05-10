@@ -145,7 +145,7 @@ h1 {
         list-style-type: disc;
     }
     .chart-title {
-        font-size: 16px;
+        font-size: 40px;
         font-family: 'Atlas Grotesk Web';
         margin-bottom: 0;
         margin-top: 2rem;
@@ -154,6 +154,7 @@ h1 {
         font-weight: 600;
         color: #111;
     }
+    
     .prose {
         max-width: 40rem;
         margin: 1rem auto;
@@ -161,6 +162,7 @@ h1 {
         line-height: 1.8;
         color: #222;
         -webkit-font-smoothing: auto;
+        text-indent:2em;
     }
     .notes {
         font-family: 'Atlas Grotesk Web';

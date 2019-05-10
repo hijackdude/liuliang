@@ -25,7 +25,7 @@ var nodes=[{name:"蔡徐坤",image:"cxk.jpg",},
 		{name:"水军",image:"sj.jpg",}];
 		
 var edges=[{source:0,target:1,relation:"制定刷量计划"},{source:0,target:2,relation:"制定刷量计划"},{source:0,target:3,relation:"制定刷量计划"},
-	   {source:0,target:2,relation:"制定刷量任务"},{source:0,target:4,relation:"工作室、水军花钱刷转发"}, {source:0,target:5,relation:"偶像和粉丝"}, 
+	{source:0,target:4,relation:"工作室、水军花钱刷转发"}, {source:0,target:5,relation:"偶像和粉丝"}, 
 	   {source:1,target:6,relation:"粉丝花钱刷转发量"},{source:1,target:7,relation:"分发刷量任务"},
 	   {source:2,target:9,relation:"粉丝花钱刷转发量"}, {source:2,target:10,relation:"分发刷量任务"},
 		 {source:3,target:12,relation:"粉丝花钱刷转发量"},{source:3,target:13,relation:"分发刷量任务"}, 
