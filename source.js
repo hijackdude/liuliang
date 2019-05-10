@@ -190,7 +190,7 @@ var pathtext = svg.selectAll('.pathText')
 		  .append('textPath')
 		  .attr("text-anchor", "middle")//居中
 		  .style("font-family","微软雅黑")
-		  .style("font-size","12px")
+		  .style("font-size","20px")
 		  .attr("startOffset","50%")
 		  .attr('xlink:href', function(d,i) { return "#edgepath" + i; })
 		  .text(function(d) { return d.relation; });						  
