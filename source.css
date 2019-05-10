@@ -1,11 +1,12 @@
 			path{
 			  fill: none;
 			  stroke: gray;
-			  stroke-width: 1.5px;
+			  stroke-width: 0.5px;
 			}
+
 			circle {
 			  stroke: #333;
-			  stroke-width: 1.5px;
+			  stroke-width: 3px;
 			}
 			text {
 			  font: 10px sans-serif;
