@@ -1,9 +1,11 @@
 var  width=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)*0.98;
 var  height=(window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight)*0.9;
-var  img_h=70;
-var  img_w=70;
+var  img_h=100;
+var  img_w=100;
 var  radius=20;
-	
+var height = 900 ; 
+var width = 1600;
+
 var svg=d3.select("#chart")  
 		.append("svg")  
 		.attr("width",width)  
@@ -146,8 +148,8 @@ var force=d3.layout.force()
 		.nodes(nodes)
 		.links(edges)
 		.size([width,height])
-		.linkDistance(height*0.4)
-		.charge(-800)
+		.linkDistance(height*0.2)
+		.charge(-1800)
 		.start();	
 //提示框部分
 var tooltip=d3.selectAll("body")  
@@ -190,7 +192,7 @@ var pathtext = svg.selectAll('.pathText')
 		  .append('textPath')
 		  .attr("text-anchor", "middle")//居中
 		  .style("font-family","微软雅黑")
-		  .style("font-size","20px")
+		  .style("font-size","13px")
 		  .attr("startOffset","50%")
 		  .attr('xlink:href', function(d,i) { return "#edgepath" + i; })
 		  .text(function(d) { return d.relation; });						  
