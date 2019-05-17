@@ -11,9 +11,9 @@ var svg=d3.select("#chart")
 		.attr("width",width)  
 		.attr("height",height); 	
 var nodes=[{name:"蔡徐坤",image:"cxk.jpg",},
-		{name:"粉头1",image:"ft.jpg",},
-		{name:"粉头2",image:"ft.jpg",},
-		{name:"粉头3",image:"ft.jpg",},
+		{name:"粉头",image:"ft.jpg",},
+		{name:"粉头",image:"ft.jpg",},
+		{name:"粉头",image:"ft.jpg",},
 		{name:"水军",image:"sj.jpg",},
 		{name:"散粉",image:"sf.jpg",},
 		{name:"水军",image:"sj.jpg",},
@@ -26,13 +26,13 @@ var nodes=[{name:"蔡徐坤",image:"cxk.jpg",},
 		{name:"大粉丝",image:"dfs.jpg",},
 		{name:"水军",image:"sj.jpg",}];
 		
-var edges=[{source:0,target:2,relation:"制定刷量计划"},{source:0,target:3,relation:"制定刷量计划"},{source:0,target:1,relation:"制定刷量计划"},{source:0,target:2,relation:"制定刷量计划"},
-	{source:0,target:4,relation:"工作室、水军花钱刷转发"}, {source:0,target:5,relation:"偶像和粉丝"}, 
-	   {source:1,target:6,relation:"粉丝花钱刷转发量"},{source:1,target:7,relation:"分发刷量任务"},
-	   {source:2,target:9,relation:"粉丝花钱刷转发量"}, {source:2,target:10,relation:"分发刷量任务"},
-		 {source:3,target:12,relation:"粉丝花钱刷转发量"},{source:3,target:13,relation:"分发刷量任务"}, 
-		 {source:7,target:8,relation:"粉丝花钱刷流量"}, {source:10,target:11,relation:"粉丝花钱刷流量"},
-	   {source:13,target:14,relation:"粉丝花钱刷流量"}];
+var edges=[{source:0,target:2,relation:"刷量计划"},{source:0,target:3,relation:"刷量计划"},{source:0,target:1,relation:"刷量计划"},{source:0,target:2,relation:"刷量计划"},
+	{source:0,target:4,relation:"刷转发量"}, {source:0,target:5,relation:"粉丝"}, 
+	   {source:1,target:6,relation:"刷转发量"},{source:1,target:7,relation:"刷量任务"},
+	   {source:2,target:9,relation:"刷转发量"}, {source:2,target:10,relation:"刷量任务"},
+		 {source:3,target:12,relation:"刷转发量"},{source:3,target:13,relation:"刷量任务"}, 
+		 {source:7,target:8,relation:"刷流量"}, {source:10,target:11,relation:"刷流量"},
+	   {source:13,target:14,relation:"刷流量"}];
 
 function fade(op,ra)
 {
@@ -183,7 +183,20 @@ var path = svg.selectAll("path")
 							   return "edgepath" +i;
 						  })
 						  .attr("class","forceLine")
-						  .attr("marker-end","url(#arrow)");		
+						//   .attr("marker-end","url(#arrow)")
+						  .style("stroke",function(d){
+							var lineColor;
+							//根据关系的不同设置线条颜色
+							if(d.relation=="刷量计划" || d.relation=="刷量任务" || d.relation=="下位产品"){
+								lineColor="#A254A2";
+							}else if(d.relation=="刷转发量" || d.relation == "刷流量"){
+								lineColor="#B43232";
+							}
+							return lineColor;
+						})
+						  .style("stroke-width",3.5);
+
+						  
 var pathtext = svg.selectAll('.pathText')
 		  .data(edges)
 		  .enter()
@@ -192,7 +205,7 @@ var pathtext = svg.selectAll('.pathText')
 		  .append('textPath')
 		  .attr("text-anchor", "middle")//居中
 		  .style("font-family","微软雅黑")
-		  .style("font-size","13px")
+		  .style("font-size","15px")
 		  .attr("startOffset","50%")
 		  .attr('xlink:href', function(d,i) { return "#edgepath" + i; })
 		  .text(function(d) { return d.relation; });						  
