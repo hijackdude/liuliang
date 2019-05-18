@@ -18,7 +18,7 @@ var svg=d3.select("#chart")
 var g = svg.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var nodes=[{name:"蔡徐坤",image:"kun2.jpg",},
+var nodes=[{name:"蔡徐坤",image:"cxk.jpg",},
 		{name:"粉头",image:"ft.jpg",},
 		{name:"粉头",image:"ft.jpg",},
 		{name:"粉头",image:"ft.jpg",},
