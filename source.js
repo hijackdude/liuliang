@@ -3,13 +3,21 @@ var  height=(window.innerHeight||document.documentElement.clientHeight||document
 var  img_h=100;
 var  img_w=100;
 var  radius=20;
-var height = 900 ; 
-var width = 1600;
+var fullwidth = 1400 ;
+var fullheight = 980 ;
+var margin = { top: 10, right: 10, bottom: 1, left: 10};
+var width = fullwidth - margin.left - margin.right;
+var height = fullheight - margin.top - margin.bottom;
 
 var svg=d3.select("#chart")  
 		.append("svg")  
-		.attr("width",width)  
-		.attr("height",height); 	
+		.attr("width",fullwidth)  
+		.attr("height",fullheight) 	
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+var g = svg.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 var nodes=[{name:"蔡徐坤",image:"cxk.jpg",},
 		{name:"粉头",image:"ft.jpg",},
 		{name:"粉头",image:"ft.jpg",},

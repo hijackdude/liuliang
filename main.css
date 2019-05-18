@@ -9,10 +9,9 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 body,article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section,div {
     display: block;}
 #chart{
-overflow: hidden;
 display: block;
-width: 1600px;
-height: 900px;
+width: 1400px;
+height: 1000px;
 margin: 0 auto;
 }
 header {
@@ -163,7 +162,7 @@ h1 {
     
     .prose {
         max-width: 40rem;
-        margin: 1rem auto;
+        margin: 0 auto;
         padding: 0 1rem;
         line-height: 1.8;
         color: #222;
