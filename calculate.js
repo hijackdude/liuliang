@@ -1,9 +1,5 @@
 $(document).ready( function () {
 
-
-    // VARIABLES
-    // ----------------------------------------------------------
-
     var amount, percent, result;
     var calculator = $('.calculator');
     var calculatorBill = calculator.find('.calculator__bill');
@@ -13,9 +9,6 @@ $(document).ready( function () {
     var billamount = calculator.find('.bill-amount');
     var tipAmount = calculator.find('.tip-amount');
     var tipAmount2 = calculator.find('.tip2-amount');
-
-    // INIT BILL
-    // ----------------------------------------------------------
 
     $(window).on('DOMContentLoaded', function () {
         billamount.text(calculatorBill.val())
@@ -27,10 +20,6 @@ $(document).ready( function () {
         result = amount + amount * ( percent / 100 ) + percent2;
         calculatorResult.text( result.toFixed(2)  );
     });
-
-
-    // RANGE FUNCTION
-    // ----------------------------------------------------------
 
     calculatorBill.on('change', function () {
 
@@ -78,4 +67,3 @@ $(document).ready( function () {
     });
 
 });
-
