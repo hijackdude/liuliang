@@ -1,7 +1,9 @@
 .wrapper {
     width: 520px;
+    height: 680px;
+    overflow: hidden;
     margin: 0 auto;
-    padding: 30px 30px;
+    padding: 10px 10px;
     border: 1px solid #EAEBE3;
      border-radius:15px;    
      border-color: EAEBE3;
@@ -10,14 +12,14 @@
 
 .wrapper__title {
     text-transform: capitalize;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 
 .calculator__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 
 .calculator__row:last-child {
@@ -31,15 +33,15 @@
 }
 
 .calculator__bill {
-    width: 80%;
+    width: 85%;
 }
 
 .calculator__tip {
-    width: 80%;
+    width: 85%;
 }
 
 .calculator__tip2 {
-    width: 80%;
+    width: 85%;
 }
 
 .calculator__info {

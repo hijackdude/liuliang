@@ -27,7 +27,7 @@ var nodes=[{name:"蔡徐坤",image:"cxk.jpg",},
 		{name:"水军",image:"sj.jpg",}];
 		
 var edges=[{source:0,target:2,relation:"刷量计划"},{source:0,target:3,relation:"刷量计划"},{source:0,target:1,relation:"刷量计划"},{source:0,target:2,relation:"刷量计划"},
-	{source:0,target:4,relation:"刷转发量"}, {source:0,target:5,relation:"粉丝"}, 
+	{source:0,target:4,relation:"刷转发量"}, {source:0,target:5,relation:"追星"}, 
 	   {source:1,target:6,relation:"刷转发量"},{source:1,target:7,relation:"刷量任务"},
 	   {source:2,target:9,relation:"刷转发量"}, {source:2,target:10,relation:"刷量任务"},
 		 {source:3,target:12,relation:"刷转发量"},{source:3,target:13,relation:"刷量任务"}, 
@@ -187,14 +187,14 @@ var path = svg.selectAll("path")
 						  .style("stroke",function(d){
 							var lineColor;
 							//根据关系的不同设置线条颜色
-							if(d.relation=="刷量计划" || d.relation=="刷量任务" || d.relation=="下位产品"){
-								lineColor="#A254A2";
+							if(d.relation=="刷量计划" || d.relation=="刷量任务" || d.relation=="下位产品"|| d.relation=="追星"){
+								lineColor="#ffd7a9";
 							}else if(d.relation=="刷转发量" || d.relation == "刷流量"){
-								lineColor="#B43232";
+								lineColor="#ff0000";
 							}
 							return lineColor;
 						})
-						  .style("stroke-width",3.5);
+						  .style("stroke-width",5);
 
 						  
 var pathtext = svg.selectAll('.pathText')

@@ -11,6 +11,9 @@ body,article, aside, details, figcaption, figure, footer, header, hgroup, main, 
 #chart{
 overflow: hidden;
 display: block;
+width: 1600px;
+height: 900px;
+margin: 0 auto;
 }
 header {
     position: absolute;

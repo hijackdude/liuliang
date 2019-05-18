@@ -5,14 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Expires" content="0">
 
-<head>
+
         <title>虚假流量现形记————一亿人都转发了他的微博？</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="main.css" type="text/css" />
         <link rel="stylesheet" href="datou.css" type="text/css" />
         <link rel="stylesheet" href="source.css" type="text/css" />
         <link rel="stylesheet" href="calculate.css" type="text/css" />
+
+        <link rel='stylesheet' id='style-css'  href='style2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='lmlblog-css'  href='lmlblog.css' type='text/css' media='all' />
 
         <style type="text/css">
         .headpic {
@@ -43,12 +50,12 @@
         </div>
         
         <div class="manhua" >
-        <img src="manhua.png" width="100%" height="800px" style="margin: 0 auto"> 
+        <img src="manhua.png" width="100%" height="100%" style="margin: 0 auto"> 
         </div>
         
         
         <p class="prose" >那么，转发他微博的人都是谁呢？下面这个传播路径图，是通过爬取蔡徐坤“1亿微博”的转发关系，以及这些“粉丝”们的个人信息而分析出的。(试着点击每一个头像，看看微博的转发传播路径。)</p></div>
-        <div id="chart" style="margin:0 auto"></div>
+        <div id="chart"></div>
    
              </div>
         <section class="section1">
@@ -132,31 +139,57 @@
         <p class="prose">然而，这种人工手动的“控评”操作只是制造流量的环节之一，这幕制造流量泡沫的大戏，还有另一个参与主体——水军。</p>
         <p class="prose">小郭曾在一家业内知名的广告公司的明星组担任实习生，日常工作是根据客户的具体需求为客户的品牌推广活动推荐合适的明星。他向我们透露，无论是粉丝，还是明星背后的经济公司，都会通过水军来人为的刷高明星微博的转评赞数。而专门负责刷高微博转评赞数的“水军”，在业内往往被称为“微博数据维护”。</p>
         <p class="prose">你愿意为爱豆花多少钱？又能“做出”什么样的数据？试试<b>“水军计算器”</b>（注：根据2019年5月微博手机的“买转买赞”价目表生成） </p>
-         <div class="calculator" style="color:coral">
+         <div class="calculator" style="color:#ff7522">
                     <div class="wrapper">
                             <h1 class="wrapper__title">帮你计算流量背后价值</h1>
                             <form class="calculator">
                                     <div class="calculator__row">
-                                            <label for="bill">转发数: <span class="bill-amount"></span></label>
-                                            <input type="range" min="0" max="100000" value="0" step="1" class="calculator__bill" id="bill" required>
+                                            <label for="bill">转发</label>
+                                            <input type="range" min="0" max="90000000" value="0" step="1" class="calculator__bill" id="bill" required>
                                     </div>
         
                                     <div class="calculator__row">
-                                            <label for="tip">评论数: <span class="tip-amount"></span></label>
-                                            <input type="range" min="0" max="100000" value="0" step="1" class="calculator__tip" id="tip" required/>
+                                            <label for="tip">评论</label>
+                                            <input type="range" min="0" max="90000000" value="0" step="1" class="calculator__tip" id="tip" required/>
                                     </div>
         
                                     <div class="calculator__row">
-                                            <label for="tip2">点赞数: <span class="tip2-amount"></span></label>
-                                            <input type="range" min="0" max="100000" value="0" step="1" class="calculator__tip2" id="tip" required>
+                                            <label for="tip2">点赞</label>
+                                            <input type="range" min="0" max="9000000" value="0" step="1" class="calculator__tip2" id="tip" required>
                                     </div>
-        
-                                    <div class="calculator__row">
-                                            <h2 class="calculator__info">花费金额: <span class="calculator__result"></span></h2>
-                                    </div>
+                                    <h5 class="calculator__info">花费金额: <span class="calculator__result"></span></h5>
                             </form>
-                    </div>
+<div class="hhh">
+<!-- 动态内容部分，包括列表 -->
+<div class="lmlblog-post-user-info">
+        <div class="lmlblog-post-user-info-avatar" user-data="1">
+        <span class="lmlblog-vip-icon"></span><img src="kun2.jpg" class="avatar"/>
+        </div>
+        <div class="lmlblog-post-user-info-name">
+        <font style="color:#333;font-weight:600">蔡徐坤</font>
+        <span class="lmlblog-mark lmlblog-vip">VIP 7</span></div>
+        <div class="lmlblog-post-user-info-time" title="2019-03-01">
+        3-1 13:50 来自vivo</div>
+        </div>
+        <div class="lmlblog-post-content ">
+        <p class="kunkun">From Zero to One, From One to Infinity. ​​​​</p>
+        </div>
+        <img src="kun.jpg" width="300px" height="300px" style="margin-left:20px">
+        <div class="lmlblog-post-bar">
+        <li onclick='list_comments_show(this);'>
+        <i class="lmlblog-icon"></i>转发 <span class="bill-amount"></span>
+        </li>
+        <li onclick='lmlblog_pop_login_style();'>
+        <i class="lmlblog-icon"></i>评论  <span class="tip-amount"></span>
+        </li>
+        <li>
+        <i class="lmlblog-icon"></i>点赞<span class="tip2-amount"></span>
+        </li>
+        </div>
+    </div>
                 </div>
+                    </div>
+
                 <!-- <p class="notes"></p> -->
                 <!-- if notes necessary -->
                 <p class="prose">批量购买小号之后，粉丝还需要支付一定金额将账号绑定到特定的app中，随后复制艺人的微博链接，对转发的时间间隔、具体数量进行设置。“有些广告里说‘真人粉丝真实转发’，但有人试过、被骗了”，小罗介绍道不同明星的粉丝之间经常互相推荐靠谱的刷量业务经营者，但即便如此，在用假账号批量转发时，会出现“死号”的状况，“你设置了转发15次，但第十次就卡住了，这种情况很常见，而且一下子上百个（出问题），钱就白花了。”</p>
