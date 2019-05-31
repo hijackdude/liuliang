@@ -20,7 +20,18 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;}
+#footer{
+          font-size: 14px;
+        letter-spacing: 2px;
+    background-color: #DEDEDE;
+    width: 2000px;
+    text-align: center;
+    height: 200px;
+    text-align:center;
+    vertical-align:middle;
+     display: table-cell; 
 
+}
 h1 {
     display: block;
     font-size: 2em;
@@ -62,7 +73,7 @@ h1 {
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-family: 'Atlas Grotesk Web';
+        font-family: '宋体';
         font-weight: 300;
         line-height: 1.2;
         font-size: 64px;
@@ -77,8 +88,7 @@ h1 {
         margin-top: -100px;
     }
     body {
-        background: #f9f9f9;
-        font-size: 17px;
+        background: white;
     }
     
     h3 {
@@ -98,7 +108,8 @@ h1 {
         margin-inline-end: 0px;
     }
     .section1, .section3 {
-        max-width: 40rem;
+        height: 400px;
+        width: 1390px;
         margin: 0 auto;
         padding-top: 1rem; margin: 0 auto;
         overflow: hidden;
@@ -106,10 +117,10 @@ h1 {
 
     .definition-wrapper {
         padding: 0 1rem;
-        max-width: 40rem;
+        max-width: 50rem;
         margin: 0 auto;
         margin-top: 2rem;
-        text-align: utify;
+        text-align: "utify";
     }
     .summary {
         max-width: 40rem;
@@ -118,7 +129,7 @@ h1 {
     }
     .summary.calculation__title,
     .summary.must__title {
-        font-family: Atlas Grotesk Web;
+        font-family:"宋体";
         font-weight: 500;
         font-size: 15px;
         margin-bottom: .5rem;
@@ -136,9 +147,10 @@ h1 {
     }
     .chart-title {
         font-size: 40px;
-        font-family: 'Atlas Grotesk Web';
+        font-family: '宋体';
         margin-bottom: 0;
         margin-top: 2rem;
+        text-align:center;
         padding-bottom: 11px;
         border-bottom: 3px solid #000;
         font-weight: 600;
@@ -146,20 +158,22 @@ h1 {
     }
     
     .prose {
-        max-width: 60rem;
+        max-width: 50rem;
         padding: 0 1rem;
-        line-height: 1.5;
-        color: #222;
+        line-height: 2;
+        color: #000;
         -webkit-font-smoothing: auto;
-        text-indent:1.5em;
+        text-indent:2em;
         font-weight: 300;
-        max-width: 40rem;
         padding-top: 1rem; margin: 0 auto;
         overflow: hidden;
         text-align: justify;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-family: '宋体';
     }
     .notes {
-        font-family: 'Atlas Grotesk Web';
+        font-family: '宋体';
         color: rgba(0,0,0,.67);
         font-size: 12px;
         line-height: 1.5;
