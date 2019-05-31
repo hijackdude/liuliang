@@ -1,0 +1,40 @@
+
+.front, .back {
+	position: absolute;
+	top: 0;
+}
+.back {
+	position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /*z-index: -1;*/
+}
+#front1{
+display: none;
+
+}
+
+
+#front4{
+    display: none;
+    
+    }
+.front_part {
+	width: 90vw;
+	height: 150vh;
+}
+
+.front_container {
+    width: 500px;
+    margin: 0 auto;
+    border: #555 1px solid;
+    z-index: 1000000;
+}
+
+
+@media screen and (min-width: 1200px){
+    .front_container {
+        width: 300px;
+        margin-left: 1200px;
+    }
+}

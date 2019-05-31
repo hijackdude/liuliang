@@ -11,7 +11,7 @@ body,article, aside, details, figcaption, figure, footer, header, hgroup, main, 
 #chart{
 display: block;
 width: 1400px;
-height: 1000px;
+height: 720px;
 margin: 0 auto;
 }
 header {
@@ -103,28 +103,13 @@ h1 {
         padding-top: 1rem; margin: 0 auto;
         overflow: hidden;
     }
- .section__defined, .section__hed {
-    font-size: 32px;
-    color: #4a4e80;
-    font-family: 'Atlas Grotesk Web';
-    font-weight: 500;
-}
-    .section2 {
-        margin-top: 100px; margin: 0 auto;
-        overflow: hidden;   max-width: 40rem;
-    }
-    .section4 {
-        max-width: 40rem;
-        margin: 0 auto;
-        padding-top: 1rem; margin: 0 auto;
-        overflow: hidden;
-    }
+
     .definition-wrapper {
         padding: 0 1rem;
         max-width: 40rem;
         margin: 0 auto;
         margin-top: 2rem;
-        text-align: center;
+        text-align: utify;
     }
     .summary {
         max-width: 40rem;
@@ -161,13 +146,17 @@ h1 {
     }
     
     .prose {
-        max-width: 40rem;
-        margin: 0 auto;
+        max-width: 60rem;
         padding: 0 1rem;
-        line-height: 1.8;
+        line-height: 1.5;
         color: #222;
         -webkit-font-smoothing: auto;
-        text-indent:2em;
+        text-indent:1.5em;
+        font-weight: 300;
+        max-width: 40rem;
+        padding-top: 1rem; margin: 0 auto;
+        overflow: hidden;
+        text-align: justify;
     }
     .notes {
         font-family: 'Atlas Grotesk Web';

@@ -24,7 +24,7 @@ $(document).ready( function () {
     calculatorBill.on('change', function () {
 
         if ( calculatorBill.val() === '' || isNaN( calculatorBill.val() ) ) {
-            alert('Enter bill amount, please!')
+            alert('')
         } else {
             amount = calculatorBill.val() * 1;
         }
@@ -40,7 +40,7 @@ $(document).ready( function () {
     calculatorTip2.on('change', function () {
 
     if ( calculatorBill.val() === '' || isNaN( calculatorBill.val() ) ) {
-        alert('Enter bill amount, please!')
+        alert('')
     } else {
         amount = calculatorBill.val() * 1;
     }
@@ -55,7 +55,7 @@ $(document).ready( function () {
     calculatorTip.on('change', function () {
 
         if ( calculatorBill.val() === '' || isNaN( calculatorBill.val() ) ) {
-            alert('Enter bill amount, please!')
+            alert('')
         } else {
             amount = calculatorBill.val() * 1;
         }
