@@ -27,33 +27,33 @@ option = {
                 name: '虚假流量',
                 x: 600,
                 y: 1192.8,
-				symbol: 'image://xujialiuliang.png',
+				symbol: 'image://picture//xujialiuliang.png',
 				   symbolSize:[80,140],
 				
             }, {
                 name: '承担打投任务',
                 x: 300,
                 y: 1016.9,
-				 symbol: 'image://sanfen.png',
+				 symbol: 'image://picture//sanfen.png',
 				   symbolSize:[100,120],
 				
             }, {
                 name: '专业刷数据',
                 x: 900,
                 y: 1016.9,
-				symbol: 'image://shuijun.png',
+				symbol: 'image://picture//shuijun.png',
 				   symbolSize:[100,120],
             }, {
                 name: '组织承接打投任务 部分与经济公司有联系',
                 x: 600,
                 y: 846.4,
-				 symbol: 'image://fentou.png',
+				 symbol: 'image://picture//fentou.png',
 				   symbolSize:[90,162]
             },
 				  {name:'需要流量来衡量其商业价值',
 				   x:300,
 				   y:673.2,
-				   symbol: 'image://yiren.png',
+				   symbol: 'image://picture//yiren.png',
 				   symbolSize:[90,162],
 				  
 		
@@ -61,13 +61,13 @@ option = {
 				  {name:'运营艺人演艺事业',
 				   x:900,
 				   y:673.2,
-				  symbol: 'image://jingjigongsi.png',
+				  symbol: 'image://picture//jingjigongsi.png',
 				   symbolSize:[150,100],
 				  },
 				  {name:'提供演艺资源 需要艺人流量',
 				  x:600,
 				  y:500,
-				   symbol: 'image://guanggaozhu.png',
+				   symbol: 'image://picture//guanggaozhu.png',
 				   symbolSize:[160,150],},],
             // links: [],
             links: [{
