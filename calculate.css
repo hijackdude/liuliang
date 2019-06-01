@@ -1,13 +1,13 @@
 .wrapper {
-  width: 50vw;
-  height: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 10px 10px;
-  border: 3px solid #EAEBE3;
-   border-radius:15px;    
-   border-color: EAEBE3;
-   background-color:white;  
+  width: 500px;
+  height: 740px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: 3px solid #EAEBE3;
+     border-radius:15px;    
+     border-color: EAEBE3;
+     background-color:EAEBE3;
 }
 .wrapper__title {
     text-transform: capitalize;
@@ -17,8 +17,8 @@
     font-size: 40px;
 }
 .calculators{
-  width:38vw;
- height: 100%;
+  width:420px;
+  height: 145px;
  margin: 0 auto;
  border: 2px solid;
  padding-top:15px;
