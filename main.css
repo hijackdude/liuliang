@@ -10,8 +10,7 @@ body,article, aside, details, figcaption, figure, footer, header, hgroup, main, 
     display: block;}
 #chart{
 display: block;
-width: 1400px;
-height: 720px;
+height: 750px;
 margin: 0 auto;
 }
 header {
