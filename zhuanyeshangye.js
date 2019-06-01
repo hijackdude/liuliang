@@ -1,4 +1,4 @@
-   var myChart = echarts.init(document.getElementById('zhuanyeshangye'));
+   var barChart = echarts.init(document.getElementById('zhuanyeshangye'));
 		
   var dataBJ = [
    [70.92,89.63,1,1,1,1,83.55,"朱正廷"],
@@ -338,4 +338,5 @@ option = {
 		 
     ]
 };
-	 myChart.setOption(option);// JavaScript Document
+     barChart.setOption(option);// JavaScript Document
+     window.onresize = barChart.resize;

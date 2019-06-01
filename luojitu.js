@@ -1,4 +1,4 @@
- var myChart = echarts.init(document.getElementById('chart'));
+ var pieChart = echarts.init(document.getElementById('chart'));
 		
 option = {
 	
@@ -119,7 +119,8 @@ option = {
     ]
 };
 		
-	 myChart.setOption(option);
+     pieChart.setOption(option);
+     window.onresize = pieChart.resize;
 		
     
 

@@ -1,4 +1,4 @@
- var myChart = echarts.init(document.getElementById('redushangye'));
+ var lineChart = echarts.init(document.getElementById('redushangye'));
 		
   var dataBJ = [
    
@@ -402,4 +402,5 @@ option = {
         }
     ]
 };
-	 myChart.setOption(option);// JavaScript Document
+     lineChart.setOption(option);// JavaScript Document
+     window.onresize = lineChart.resize;
