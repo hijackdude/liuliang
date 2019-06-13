@@ -159,7 +159,7 @@ h1 {
     .prose {
         max-width: 50rem;
         padding: 0 1rem;
-        line-height: 2;
+        line-height: 160%;
         color: #000;
         -webkit-font-smoothing: auto;
         text-indent:2em;
