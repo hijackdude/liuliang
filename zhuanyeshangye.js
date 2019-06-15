@@ -256,7 +256,7 @@ option = {
       
         nameTextStyle: {
             color: '#2F4F4F',
-            fontSize: 16
+            fontSize: 14
         },
         axisLine: {
             lineStyle: {
